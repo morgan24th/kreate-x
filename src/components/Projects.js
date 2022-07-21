@@ -1,10 +1,10 @@
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
-import kreate_x from '../database/data'
+import data from '../database/data'
 
-const Home = () => {
-  const {welcome,message} = kreate_x
+const Projects = () => {
+    const {projects} = data
 
   return (
     <div>
@@ -12,12 +12,9 @@ const Home = () => {
       <div className='main'>
         {/* header and content */}
         <div className='flex-1'>
-          <Header active={'/'}/>
+          <Header active={'/projects'}/>
           <div className='container'>
-            <div>
-              <h1 className='lg:text-5xl text-4xl text-blue-700 font-semibold'>{welcome}</h1>
-              <p className='text-xl'>{message}</p>
-            </div>
+            <h1 className='lg:text-5xl text-3xl text-blue-700 font-semibold'>{projects.title}</h1>
           </div>
         </div>
         {/* footer */}
@@ -27,4 +24,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Projects
