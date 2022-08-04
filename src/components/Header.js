@@ -10,12 +10,12 @@ const Header = ({active}) => {
   const [openDrawer,setOpenDrawer] = useState(false)
 
   return (
-    <div className='shadow-2xl sticky z-10'>
+    <div className='shadow-2xl sticky z-10 top-0 bg-white'>
       <div className='container'>
         <div className='flex justify-between items-center'>
           {/* logo */}
           <div>
-            <Link to={'/'}><h1 className='text-2xl hover:scale-90 transition-all duration-300 font-semibold'>{name}</h1></Link>
+            <Link to={'/'}><h1 className='text-2xl hover:scale-90 transition-all duration-300 font-semibold hover:text-blue-700'>{name}</h1></Link>
           </div>
           {/* desktop nav */}
           <div className='hidden lg:flex'>
@@ -23,7 +23,7 @@ const Header = ({active}) => {
               {
                 navs.map((nav,index) =>{
                   return(
-                    <li  className={`text-xl font-medium hover:text-blue-800 hover:scale-90 transition-all duration-300 p-2 ${active === nav.href ? 'text-blue-800 font-extrabold' : ''}`} key={index}> <Link to={nav.href}>{nav.name}</Link> </li>
+                    <li  className={`text-xl font-medium hover:text-blue-700 hover:scale-90 transition-all duration-300 p-2 ${active === nav.href ? 'text-blue-800 font-extrabold' : ''}`} key={index}> <Link to={nav.href}>{nav.name}</Link> </li>
                   )
                 })
               }
@@ -42,7 +42,7 @@ const Header = ({active}) => {
               {
                 navs.map((nav,index) =>{
                   return(
-                    <li  className={`text-xl font-medium hover:text-blue-800 hover:scale-90 transition-all duration-300 p-2 ${active === nav.href ? 'text-blue-800 font-extrabold' : ''}`} key={index}> <Link to={nav.href}>{nav.name}</Link> </li>
+                    <li  className={`text-xl font-medium hover:text-blue-700 hover:scale-90 transition-all duration-300 p-2 ${active === nav.href ? 'text-blue-800 font-extrabold' : ''}`} key={index}> <Link to={nav.href}>{nav.name}</Link> </li>
                   )
                 })
               }

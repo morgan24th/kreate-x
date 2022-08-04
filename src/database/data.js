@@ -1,6 +1,6 @@
 const data = {
     name: 'Kreate-X',
-    welcome: 'Welcome to Kreate Xtra',
+    welcome: 'Welcome to Kreate-X',
     navs: [
         {
             name: 'Home',
@@ -28,6 +28,7 @@ const data = {
         rights: 'All Rights Reserved',
         date: new Date().getFullYear(),
         mail: 'Mail: kreatextral@gmail.com',
+        tel: 'Tel: +233269543715'
     },
     about: {
         title: 'About'
@@ -40,6 +41,10 @@ const data = {
     },
     connect: {
         title: 'Connect with Us'
+    },
+    photos: {
+        constructionOne: '../images/construction.jpg',
+        constructionTwo: '../images/cute-o.jpg'
     }
 }
 
